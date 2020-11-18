@@ -1,4 +1,15 @@
 body {
-  background-color: #9356dc;
+  background-color: #ffff;
+  width: 100%;
+}
+
+img {
+  display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titre_menu {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

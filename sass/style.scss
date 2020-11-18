@@ -1,5 +1,13 @@
 @import "./utils/_variables.scss";
 
 body {
-    background-color: $couleur-primaire;
+    background-color: $couleur-background;
+    width : 100%
+}
+img {
+    display: none;
+    object-fit: cover;
+}
+.titre_menu {
+    text-transform: uppercase;
 }
