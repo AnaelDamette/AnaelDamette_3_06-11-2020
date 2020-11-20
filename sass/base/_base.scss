@@ -1,0 +1,50 @@
+@font-face{ 
+	font-family: "Roboto";
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?iefix') format('eot'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+         url('WebFont.svg#webfont') format('svg');
+    font-family: "Shrikhand";
+    src: url('Shrikhand-regular.otf');
+}
+a {
+	text-decoration: none;
+    color: $couleur-font;
+    font-family : Roboto, sans-serif;
+ul {
+    list-style-type : none;
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    margin: 0px;
+}
+img {
+    object-fit: cover;
+}
+body {
+    background-color: #ffff;
+    width: 100%;
+    margin : 0px;
+}
+figure {
+    margin : 0px;
+}
+footer {
+    background-color : $couleur-font;
+    a {
+        color: $couleur-font-alt;
+        text-decoration : none;
+    }
+    figure {
+        img {
+            filter: invert(1);
+        }
+        height : 20px;
+        max-width : 100%;
+        width : 100%;
+        margin-bottom: 10px;
+    }
+    padding :20px 15px 15px 15px;
+}

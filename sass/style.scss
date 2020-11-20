@@ -1,13 +1,4 @@
 @import "./utils/_variables.scss";
-
-body {
-    background-color: $couleur-background;
-    width : 100%
-}
-img {
-    display: none;
-    object-fit: cover;
-}
-.titre_menu {
-    text-transform: uppercase;
-}
+@import "./pages/_pages.scss";
+@import "./base/_base.scss";
+@import "./composants/_composants.scss"
