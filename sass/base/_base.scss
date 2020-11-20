@@ -1,13 +1,11 @@
 @font-face{ 
-	font-family: "Roboto";
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?iefix') format('eot'),
-	     url('WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-         url('WebFont.svg#webfont') format('svg');
-    font-family: "Shrikhand";
-    src: url('Shrikhand-regular.otf');
-}
+    font-family: 'Roboto';
+    src: url(../../src/font/roboto/Roboto-Black.ttf);
+    /*
+    src: url(../../src/font/roboto/Roboto-Blackitalic);
+    src: url(../../src/font/roboto/Roboto-Bold.ttf);
+    src: url(../../src/font/roboto/Roboto-Regular.ttf);
+    src: url(../../src/font/roboto/Roboto-BoldItalic.ttf);*/
 a {
 	text-decoration: none;
     color: $couleur-font;
