@@ -1,19 +1,29 @@
-@font-face{ 
-    font-family: 'Roboto';
-    src: url(../../src/font/roboto/Roboto-Black.ttf);
-    /*
-    src: url(../../src/font/roboto/Roboto-Blackitalic);
-    src: url(../../src/font/roboto/Roboto-Bold.ttf);
-    src: url(../../src/font/roboto/Roboto-Regular.ttf);
-    src: url(../../src/font/roboto/Roboto-BoldItalic.ttf);*/
 a {
-	text-decoration: none;
+    text-decoration: none;
     color: $couleur-font;
-    font-family : Roboto, sans-serif;
+}
 ul {
-    list-style-type : none;
+    list-style-type: none;
     padding: 0px;
     margin: 0px;
+}
+p,
+a,
+ul,
+li,
+div,
+button,
+figcaption,
+h3,
+h2 {
+    font-family: "Roboto", sans-serif;
+}
+h3 {
+    margin: 0px;
+    color : black;
+}
+h1 {
+    font-family: "Shrikhand", sans-serif;
 }
 p {
     margin: 0px;
@@ -24,25 +34,44 @@ img {
 body {
     background-color: #ffff;
     width: 100%;
-    margin : 0px;
+    margin: 0px;
 }
 figure {
-    margin : 0px;
+    margin: 0px;
+    width: 100%;
 }
 footer {
-    background-color : $couleur-font;
+    background-color: $couleur-font;
+    li {
+        margin-top: 10px;
+    }
     a {
         color: $couleur-font-alt;
-        text-decoration : none;
+        text-decoration: none;
     }
     figure {
         img {
             filter: invert(1);
+            height: 1.5em;
         }
-        height : 20px;
-        max-width : 100%;
-        width : 100%;
+        max-width: 100%;
+        width: 100%;
         margin-bottom: 10px;
     }
-    padding :20px 15px 15px 15px;
+    padding: 20px 15px 30px 15px;
+}
+img {
+    max-width: fill;
+    max-height: fill;
+}
+/* Display flex */
+
+.bloc-fonctionnement,
+.bloc-fonctionnement__num,
+.bloc-fonctionnement__list,
+.restaurant,
+.bloc_restaurant,
+.bloc_restaurant__menu,
+.bloc_restaurant__menu__text {
+    display: flex;
 }
