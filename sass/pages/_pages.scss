@@ -1,11 +1,39 @@
+/* Header Index.html */
+
+.logo {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    background-color: $couleur-background;
+}
+.recherche {
+    padding : 8px;
+    background-color: $couleur-background - 25;
+    border-top: solid 2px $couleur-background - 50;
+    align-items: center;
+    justify-content: center;
+    i {
+        font-size :15px;
+        color : $couleur-font;
+        margin-right: 8px;
+    }
+    input {
+        color: $couleur-font;
+        background-color: $couleur-background - 25;
+        border : none;
+        width:30%;
+    }
+}
+
 /* Section fonctionnement */
 .fonctionnement {
-    margin: 8px;
+    margin: 8px 8px 30px 8px;
 }
 .bloc-fonctionnement {
     display: flex;
     width: 100%;
-    max-width: 320px;
     height: 4em;
     margin: 10px 0px 10px 0px;
     align-items: center;
@@ -62,7 +90,7 @@
 .bloc_restaurant {
     @include shadow;
     @include border-radius;
-     flex-direction: column;
+    flex-direction: column;
     figure {
         height: 100%;
         width: 100%;

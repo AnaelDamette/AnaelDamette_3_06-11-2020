@@ -16,16 +16,18 @@
 <body>
     <!-- Header-->
     <header>
-        <figure>
+        <figure class="logo">
             <img src="src/logo/ohmyfood.png" alt="Logo ohmyfood">
         </figure>
-        <div class="recherche">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" placeholder="Paris, Belleville" id="placeholdertext">
+        <div class="header">
+            <div class="recherche">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Paris, Belleville" id="placeholdertext">
+            </div>
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button>Explorer nos restaurants</button>
         </div>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button>Explorer nos restaurants</button>
     </header>
     <main>
         <!-- section Fontionnement-->
@@ -33,25 +35,25 @@
             <h2>Fonctionnement</h2>
             <!-- à testé pour voir si le <a> réagis bien -->
             <a href="#" class="bloc-fonctionnement">
-            	<div class="bloc-fonctionnement__num">1</div>
-            	<div class="bloc-fonctionnement__list">                
-                	<i class="fas fa-mobile-alt"></i>
-                	<p>Chosissez un restaurant</p>
-            	</div>
+                <div class="bloc-fonctionnement__num">1</div>
+                <div class="bloc-fonctionnement__list">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Chosissez un restaurant</p>
+                </div>
             </a>
             <a href="#" class="bloc-fonctionnement">
-            	<div class="bloc-fonctionnement__num">2</div>
-            	<div class="bloc-fonctionnement__list">
-                	<i class="fas fa-list-ul"></i>
-                	<p>Composez votre menu</p>
-            	</div>
-   			</a>
+                <div class="bloc-fonctionnement__num">2</div>
+                <div class="bloc-fonctionnement__list">
+                    <i class="fas fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+                </div>
+            </a>
             <a href="#" class="bloc-fonctionnement">
                 <div class="bloc-fonctionnement__num">3</div>
-                <div class="bloc-fonctionnement__list" >
-                	<i class="fas fa-store"></i>
-                	<p>Dégustez au restaurant</p>
-            	</div>
+                <div class="bloc-fonctionnement__list">
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
             </a>
         </section>
         <!-- section Restaurant-->
@@ -70,7 +72,7 @@
                 </figure>
                 <div class="nouveau nouveau--lpdg"><b>Nouveau</b></div>
             </a>
-            <a href="html/menu_la_note_enchantee.html" class="bloc_restaurant">                
+            <a href="html/menu_la_note_enchantee.html" class="bloc_restaurant">
                 <figure>
                     <img src="src/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
                     <figcaption class="bloc_restaurant__menu">
@@ -83,7 +85,7 @@
                 </figure>
                 <div class="nouveau nouveau--lne"><b>Nouveau</b></div>
             </a>
-            <a href="html/menu_a_la_francaise.html" class="bloc_restaurant">                
+            <a href="html/menu_a_la_francaise.html" class="bloc_restaurant">
                 <figure>
                     <img src="src/restaurants/a_la_francaise.jpg" alt="À la française">
                     <figcaption class="bloc_restaurant__menu">
@@ -96,7 +98,7 @@
                 </figure>
                 <!--<div class="nouveau nouveau--alf"><b>Nouveau</b></div>-->
             </a>
-            <a href="html/menu_le_delice_des_sens.html" class="bloc_restaurant">                
+            <a href="html/menu_le_delice_des_sens.html" class="bloc_restaurant">
                 <figure>
                     <img src="src/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
                     <figcaption class="bloc_restaurant__menu">
