@@ -4,12 +4,36 @@
     width: 50%;
     align-items: center;
     justify-content: center;
+    margin-bottom : 10px;
 }
-.header {
+.en-tete {
     background-color: $couleur-background;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size : 1.3em;
+        text-align: center;
+        margin-top: 1.5em; 
+    }
+    p {
+        color: $couleur-font + 40;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    button {
+        border-radius : 2em;
+        color: $couleur-font-alt;
+        background: linear-gradient(to top left, $couleur-primaire, 70%,$couleur-secondaire );
+        border : none;
+        margin: 30px 0px 50px 0px;
+        padding: 1em;
+        @include shadow;
+    }
 }
 .recherche {
-    padding : 8px;
+    width : 100%;
+    padding : 8px 0px 8px 0px;
     background-color: $couleur-background - 25;
     border-top: solid 2px $couleur-background - 50;
     align-items: center;
@@ -29,7 +53,7 @@
 
 /* Section fonctionnement */
 .fonctionnement {
-    margin: 8px 8px 30px 8px;
+    margin: 30px 8px 50px 8px;
 }
 .bloc-fonctionnement {
     display: flex;
