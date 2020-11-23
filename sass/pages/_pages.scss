@@ -29,6 +29,7 @@
         width: 100%;
         height: 100%;
         @include shadow;
+        @include border-radius;
         &:hover {
             i {
                 color: $couleur-primaire;
@@ -43,22 +44,28 @@
     flex-direction: column;
     padding: 30px 10px 30px 10px;
 }
-.bloc_restaurant {
-    max-width: fill;
-    max-height: 280px;
-}
 /* section restaurant */
 
 .nouveau {
-    display: none;
+    @include shadow;
+    border-radius: 3px;
+    font-size: 15px;
+    position: relative;
+    top: -95%;
+    left: 68%;
+    width: 70px;
+    background-color: $couleur-tertiaire;
+    color: $couleur-tertiaire - 120;
+    padding: 5px 5px 5px 10px;
 }
 
 .bloc_restaurant {
     @include shadow;
-    flex-direction: column;
+    @include border-radius;
+     flex-direction: column;
     figure {
         height: 100%;
-        width : 100%;
+        width: 100%;
     }
     figure > img {
         max-height: 70%;
