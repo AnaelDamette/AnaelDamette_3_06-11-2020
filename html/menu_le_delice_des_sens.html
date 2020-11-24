@@ -8,7 +8,7 @@
     <meta name="description" content="Index du site de vente de repas en ligne OhMyFood">
     <link rel="stylesheet" href="../sass/style.css">
     <script src="https://kit.fontawesome.com/b52a7bdb12.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Menu du restaurant Le délice des sens OhMyFood</title>
 </head>
 
@@ -16,18 +16,21 @@
     <header>
         <nav>
             <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
-            <figure><img src="../src/logo/ohmyfood.png" alt="logo ohmyfood"></figure>
+            <figure class= "logo"><img src="../src/logo/ohmyfood.png" alt="logo ohmyfood"></figure>
         </nav>
-        <figure>
+        <figure class="entete_restaurant">
             <img src="../src/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
-            <figcaption><i class="far fa-heart"></i></figcaption>
-            <h1>Le délice des sens</h1>
-
+            <figcaption>
+                <div class="titre_menu">
+                    <h1>Le délice des sens</h1>
+                    <i class="far fa-heart"></i>
+                </div>
+            </figcaption>
         </figure>
     </header>
     <main>
-        <section class="entree">
-        <h2 class="titre_menu">Entrées</h2>
+        <section class="menu entree">
+            <h2 class="titre_menu">Entrées</h2>
             <div class="bloc_menu">
                 <h3>Tartare de thon</h3>
                 <div class="bloc_menu__legende">
@@ -50,8 +53,8 @@
                 </div>
             </div>
         </section>
-        <section class="plat">
-        <h2 class="titre_menu">Plats</h2>
+        <section class="menu plat">
+            <h2 class="titre_menu">Plats</h2>
             <div class="bloc_menu">
                 <h3>Poulet rôti aux herbes de Provence</h3>
                 <div class="bloc_menu__legende">
@@ -74,8 +77,8 @@
                 </div>
             </div>
         </section>
-        <section class="dessert">
-        <h2 class="titre_menu">Desserts</h2>
+        <section class="menu dessert">
+            <h2 class="titre_menu">Desserts</h2>
             <div class="bloc_menu">
                 <h3>Farandole de desserts</h3>
                 <div class="bloc_menu__legende">
@@ -98,7 +101,9 @@
                 </div>
             </div>
         </section>
-        <button> Commander </button>
+        <div class="bouton_commander">
+            <button> Commander </button>
+        </div>
     </main>
     <footer>
         <figure><img src="../src/logo/ohmyfood.png" alt="logo ohmyfood"></figure>

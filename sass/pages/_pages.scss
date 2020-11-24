@@ -1,10 +1,16 @@
-/* Header Index.html */
+/* Page : Index html */
+.body-index {
+    background-color: $couleur-background-alt;
+}
+/* Header */
 
 .logo {
-    width: 50%;
+    img {
+        width: 50%;
+    }
     align-items: center;
     justify-content: center;
-    margin-bottom : 10px;
+    margin: 10px 0px 10px 0px;
 }
 .en-tete {
     background-color: $couleur-background;
@@ -12,42 +18,33 @@
     justify-content: center;
     align-items: center;
     h1 {
-        font-size : 1.3em;
+        font-size: 1.3em;
         text-align: center;
-        margin-top: 1.5em; 
+        margin-top: 1.5em;
     }
     p {
         color: $couleur-font + 40;
         font-size: 0.9em;
         text-align: center;
     }
-    button {
-        border-radius : 2em;
-        color: $couleur-font-alt;
-        background: linear-gradient(to top left, $couleur-primaire, 70%,$couleur-secondaire );
-        border : none;
-        margin: 30px 0px 50px 0px;
-        padding: 1em;
-        @include shadow;
-    }
 }
 .recherche {
-    width : 100%;
-    padding : 8px 0px 8px 0px;
+    width: 100%;
+    padding: 8px 0px 8px 0px;
     background-color: $couleur-background - 25;
     border-top: solid 2px $couleur-background - 50;
     align-items: center;
     justify-content: center;
     i {
-        font-size :15px;
-        color : $couleur-font;
+        font-size: 15px;
+        color: $couleur-font;
         margin-right: 8px;
     }
     input {
         color: $couleur-font;
         background-color: $couleur-background - 25;
-        border : none;
-        width:30%;
+        border: none;
+        width: 30%;
     }
 }
 
@@ -110,7 +107,6 @@
     color: $couleur-tertiaire - 120;
     padding: 5px 5px 5px 10px;
 }
-
 .bloc_restaurant {
     @include shadow;
     @include border-radius;
@@ -118,10 +114,6 @@
     figure {
         height: 100%;
         width: 100%;
-    }
-    figure > img {
-        max-height: 70%;
-        min-width: 100%;
     }
     overflow: hidden;
     margin: 10px 0px 10px 0px;
@@ -137,4 +129,81 @@
     &__menu__text {
         flex-direction: column;
     }
+}
+/* Fin de page Index Html */
+/* Page Restaurant */
+/* Header */
+
+nav {
+    align-items: center;
+    background-color: $couleur-background-alt;
+    justify-content: space-around;
+    padding: $padding;
+    a {
+        font-size: 20px;
+    }
+    figure {
+        img {
+            width: 50%;
+        }
+    }
+}
+.entete_restaurant {
+    height: 270px;
+    figcaption {
+        margin-top: -3em;
+        padding: 1em 0em 1em 0em;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        background-color: $couleur-background;
+        display: inline-block;
+        width: 100%;
+        .titre_menu {
+            padding: $padding;
+            align-items: center;
+            justify-content: space-between;
+            i {
+                font-size: 20px;
+                margin-right: 20px;
+            }
+            h1 {
+                margin-right: 40px;
+                font-size: 1.3em;
+                font-family: "Shrikhand";
+            }
+        }
+    }
+}
+/* Les menus */
+
+.entree,
+.plat,
+.dessert {
+    padding: $padding;
+}
+.bloc_menu {
+    @include shadow;
+    @include border-radius;
+    background-color: $couleur-background-alt;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    &__legende {
+        justify-content: space-between;
+    }
+}
+.menu {
+    margin: 50px 0px 20px 0px;
+    h2 {
+        border-bottom: 3px $couleur-tertiaire solid;
+        padding-bottom: 5px;
+        width: 40px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $couleur-font;
+        font-size: 1em;
+    }
+}
+.entree {
+    margin-top : 0px;
 }

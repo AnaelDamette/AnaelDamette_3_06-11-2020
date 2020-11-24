@@ -8,24 +8,28 @@
     <meta name="description" content="Index du site de vente de repas en ligne OhMyFood">
     <link rel="stylesheet" href="../sass/style.css">
     <script src="https://kit.fontawesome.com/b52a7bdb12.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Menu du restaurant à la Française OhMyFood</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-            <figure><img src="../src/logo/ohmyfood.png" alt="logo ohmyfood"></figure>
+            <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+            <figure class="logo"><img src="../src/logo/ohmyfood.png" alt="logo ohmyfood"></figure>
         </nav>
-        <figure>
+        <figure class="entete_restaurant">
             <img src="../src/restaurants/a_la_francaise.jpg" alt="À la française">
-            <figcaption><i class="far fa-heart"></i></figcaption>
-            <h1>À la française</h1>
+            <figcaption>
+                <div class="titre_menu">
+                    <h1>À la française</h1>
+                    <i class="far fa-heart"></i>
+                </div>
+            </figcaption>
         </figure>
     </header>
     <main>
-        <section class="entree">
+        <section class="menu entree">
             <h2 class="titre_menu">Entrées</h2>
             <div class="bloc_menu">
                 <h3>Tartare de poule acidulé</h3>
@@ -49,7 +53,7 @@
                 </div>
             </div>
         </section>
-        <section class="plat">
+        <section class="menu plat">
             <h2 class="titre_menu">Plats</h2>
             <div class="bloc_menu">
                 <h3>Coquilles Saint-Jacques</h3>
@@ -73,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="desert">
+        <section class="menu dessert">
             <h2 class="titre_menu">Desserts</h2>
             <div class="bloc_menu">
                 <h3>Pétales de violettes glacés</h3>
@@ -97,7 +101,9 @@
                 </div>
             </div>
         </section>
-        <button> Commander </button>
+        <div class="bouton_commander">
+            <button> Commander </button>
+        </div>
     </main>
     <footer>
         <figure><img src="../src/logo/ohmyfood.png" alt="Logo ohmyfood"></figure>
