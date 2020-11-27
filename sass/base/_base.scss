@@ -84,6 +84,9 @@ nav,
     display: flex;
 }
 button {
+    &:focus {
+        outline-style:none;
+    }
     border-radius: 2em;
     color: $couleur-font-alt;
     background: linear-gradient(to top left, $couleur-primaire, 70%, $couleur-secondaire);
@@ -92,7 +95,11 @@ button {
     padding: 1em;
     min-width: 150px;
     @include shadow;
-}
+    &:hover {
+        background: linear-gradient(to top left, $couleur-primaire, 50%, $couleur-secondaire);
+        box-shadow: 2px 2px 10px #666565;
+    }
+    }
 .bouton_commander {
     justify-content: center;
 }
