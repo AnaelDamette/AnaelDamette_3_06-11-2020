@@ -31,9 +31,14 @@ img {
     object-fit: cover;
 }
 body {
-    background-color: $couleur-background;
     width: 100%;
     margin: 0px;
+}
+.page {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $couleur-background;
 }
 figure {
     margin: 0;
@@ -61,6 +66,7 @@ footer {
 /* Display flex */
 
 .bloc-fonctionnement,
+.bouton,
 .bloc-fonctionnement__num,
 .bloc-fonctionnement__list,
 .restaurant,

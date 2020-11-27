@@ -1,31 +1,42 @@
 /* Page : Index html */
-.body-index {
-    background-color: $couleur-background-alt;
-}
 /* Header */
 
 .logo {
+    background-color: $couleur-background-alt;
     img {
         width: 50%;
+        max-height: 80px;
+        max-width: 212px;
     }
     align-items: center;
     justify-content: center;
-    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
 }
 .en-tete {
     background-color: $couleur-background;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1 {
-        font-size: 1.3em;
-        text-align: center;
-        margin-top: 1.5em;
-    }
-    p {
-        color: $couleur-font + 40;
-        font-size: 0.9em;
-        text-align: center;
+    .en-tete-wrap {
+        br {
+            display: none;
+        }
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h1 {
+            font-size: 1.3em;
+            text-align: center;
+            margin-top: 1.5em;
+        }
+        p {
+            color: $couleur-font + 40;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .bouton {
+            justify-content: center;
+        }
     }
 }
 .recherche {
@@ -50,7 +61,16 @@
 
 /* Section fonctionnement */
 .fonctionnement {
-    margin: 30px 8px 50px 8px;
+    padding: 30px 15px 50px 15px;
+    background-color: $couleur-background-alt;
+    .fonctionnement-wrap {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 15px 0px 15px 0px;
+        }
+    }
 }
 .bloc-fonctionnement {
     display: flex;
@@ -58,6 +78,10 @@
     height: 4em;
     margin: 10px 0px 10px 0px;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        margin: 8px;
+        width: 300px;
+    }
 
     &__num {
         width: 20px;
@@ -91,7 +115,7 @@
     background-color: $couleur-background;
     max-width: 100%;
     flex-direction: column;
-    padding: 30px 10px 30px 10px;
+    padding: 30px 15px 30px 15px;
 }
 /* section restaurant */
 
@@ -111,12 +135,17 @@
     @include shadow;
     @include border-radius;
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+        width: 345px;
+        height: 230px;
+        margin: 15px;
+    }
     figure {
         height: 100%;
         width: 100%;
     }
     overflow: hidden;
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0px 15px 0px;
     height: 230px;
     &__menu {
         justify-content: space-between;
@@ -128,6 +157,13 @@
     }
     &__menu__text {
         flex-direction: column;
+    }
+}
+.restaurant-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 /* Fin de page Index Html */
@@ -184,6 +220,9 @@ nav {
 .bloc_menu {
     @include shadow;
     @include border-radius;
+    @media screen and (min-width: 768px) {
+        min-width : 315px;
+    }
     background-color: $couleur-background-alt;
     flex-direction: column;
     margin: 10px 0px 10px 0px;
@@ -192,8 +231,16 @@ nav {
         justify-content: space-between;
     }
 }
+.menu-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
 .menu {
-    margin: 50px 0px 20px 0px;
+    margin: 20px 0px 50px 0px;
     h2 {
         border-bottom: 3px $couleur-tertiaire solid;
         padding-bottom: 5px;
@@ -204,6 +251,5 @@ nav {
         font-size: 1em;
     }
 }
-.entree {
-    margin-top : 0px;
+@keyframes menu-deroulant {
 }

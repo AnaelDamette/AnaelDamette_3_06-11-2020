@@ -13,117 +13,123 @@
     <title>OhMyFood La restauration à distance</title>
 </head>
 
-<body class="body-index">
-    <!-- Header-->
-    <header>
-        <figure class="logo">
-            <img src="src/logo/ohmyfood.png" alt="Logo ohmyfood">
-        </figure>
-        <div class="en-tete">
-            <div class="recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" placeholder="Paris, Belleville" id="placeholdertext">
+<body>
+    <div class="page body-index">
+        <!-- Header-->
+        <header>
+            <figure class="logo">
+                <img src="src/logo/ohmyfood.png" alt="Logo ohmyfood">
+            </figure>
+            <div class="en-tete">
+                <div class="recherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Paris, Belleville" id="placeholdertext">
+                </div>
+                <div class="en-tete-wrap">
+                    <h1>Réservez le menu qui <br> vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, <br> sélectionnés par nos soins.</p>
+                </div>
+                <div class="bouton"><button>Explorer nos restaurants</button></div>
             </div>
-            <h1>Réservez le menu qui <br> vous convient</h1>
-            <p>Découvrez des restaurants d'exception, <br> sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
-        </div>
-    </header>
-    <main>
-        <!-- section Fontionnement-->
-        <section class="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <!-- à testé pour voir si le <a> réagis bien -->
-            <a href="#" class="bloc-fonctionnement">
-                <div class="bloc-fonctionnement__num">1</div>
-                <div class="bloc-fonctionnement__list">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Chosissez un restaurant</p>
+        </header>
+        <main>
+            <!-- section Fontionnement-->
+            <section class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <div class="fonctionnement-wrap">
+                    <a href="#" class="bloc-fonctionnement">
+                        <div class="bloc-fonctionnement__num">1</div>
+                        <div class="bloc-fonctionnement__list">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Chosissez un restaurant</p>
+                        </div>
+                    </a>
+                    <a href="#" class="bloc-fonctionnement">
+                        <div class="bloc-fonctionnement__num">2</div>
+                        <div class="bloc-fonctionnement__list">
+                            <i class="fas fa-list-ul"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                    </a>
+                    <a href="#" class="bloc-fonctionnement">
+                        <div class="bloc-fonctionnement__num">3</div>
+                        <div class="bloc-fonctionnement__list">
+                            <i class="fas fa-store"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="#" class="bloc-fonctionnement">
-                <div class="bloc-fonctionnement__num">2</div>
-                <div class="bloc-fonctionnement__list">
-                    <i class="fas fa-list-ul"></i>
-                    <p>Composez votre menu</p>
+            </section>
+            <!-- section Restaurant-->
+            <section class="restaurant">
+                <h2>Restaurant</h2>
+                <div class="restaurant-wrap">
+                    <a href="html/menu_la_palette_du_gout.html" class="bloc_restaurant">
+                        <figure>
+                            <img src="src/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+                            <figcaption class="bloc_restaurant__menu">
+                                <div class="bloc_restaurant__menu__text">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </figcaption>
+                        </figure>
+                        <div class="nouveau nouveau--lpdg"><b>Nouveau</b></div>
+                    </a>
+                    <a href="html/menu_la_note_enchantee.html" class="bloc_restaurant">
+                        <figure>
+                            <img src="src/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
+                            <figcaption class="bloc_restaurant__menu">
+                                <div class="bloc_restaurant__menu__text">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </figcaption>
+                        </figure>
+                        <div class="nouveau nouveau--lne"><b>Nouveau</b></div>
+                    </a>
+                    <a href="html/menu_a_la_francaise.html" class="bloc_restaurant">
+                        <figure>
+                            <img src="src/restaurants/a_la_francaise.jpg" alt="À la française">
+                            <figcaption class="bloc_restaurant__menu">
+                                <div class="bloc_restaurant__menu__text">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </figcaption>
+                        </figure>
+                        <!--<div class="nouveau nouveau--alf"><b>Nouveau</b></div>-->
+                    </a>
+                    <a href="html/menu_le_delice_des_sens.html" class="bloc_restaurant">
+                        <figure>
+                            <img src="src/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
+                            <figcaption class="bloc_restaurant__menu">
+                                <div class="bloc_restaurant__menu__text">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </figcaption>
+                        </figure>
+                        <!--<div class="nouveau nouveau--ldds"><b>Nouveau</b></div>-->
+                    </a>
                 </div>
-            </a>
-            <a href="#" class="bloc-fonctionnement">
-                <div class="bloc-fonctionnement__num">3</div>
-                <div class="bloc-fonctionnement__list">
-                    <i class="fas fa-store"></i>
-                    <p>Dégustez au restaurant</p>
-                </div>
-            </a>
-        </section>
-        <!-- section Restaurant-->
-        <section class="restaurant">
-            <h2>Restaurant</h2>
-            <a href="html/menu_la_palette_du_gout.html" class="bloc_restaurant">
-                <figure>
-                    <img src="src/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
-                    <figcaption class="bloc_restaurant__menu">
-                        <div class="bloc_restaurant__menu__text">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <i class="far fa-heart"></i>
-                    </figcaption>
-                </figure>
-                <div class="nouveau nouveau--lpdg"><b>Nouveau</b></div>
-            </a>
-            <a href="html/menu_la_note_enchantee.html" class="bloc_restaurant">
-                <figure>
-                    <img src="src/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
-                    <figcaption class="bloc_restaurant__menu">
-                        <div class="bloc_restaurant__menu__text">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <i class="far fa-heart"></i>
-                    </figcaption>
-                </figure>
-                <div class="nouveau nouveau--lne"><b>Nouveau</b></div>
-            </a>
-            <a href="html/menu_a_la_francaise.html" class="bloc_restaurant">
-                <figure>
-                    <img src="src/restaurants/a_la_francaise.jpg" alt="À la française">
-                    <figcaption class="bloc_restaurant__menu">
-                        <div class="bloc_restaurant__menu__text">
-                            <h3>À la française</h3>
-                            <p>Cité Rouge</p>
-                        </div>
-                        <i class="far fa-heart"></i>
-                    </figcaption>
-                </figure>
-                <!--<div class="nouveau nouveau--alf"><b>Nouveau</b></div>-->
-            </a>
-            <a href="html/menu_le_delice_des_sens.html" class="bloc_restaurant">
-                <figure>
-                    <img src="src/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
-                    <figcaption class="bloc_restaurant__menu">
-                        <div class="bloc_restaurant__menu__text">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div>
-                        <i class="far fa-heart"></i>
-                    </figcaption>
-                </figure>
-                <!--<div class="nouveau nouveau--ldds"><b>Nouveau</b></div>-->
-            </a>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <figure><img src="src/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></figure>
-        <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
-            <li><a href="#"> Mentions légales</a></li>
-            <li><a href="mailto:lemail@adresse.com">Contact</a></li>
-        </ul>
-    </footer>
-
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <figure><img src="src/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></figure>
+            <ul>
+                <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
+                <li><a href="#"> Mentions légales</a></li>
+                <li><a href="mailto:lemail@adresse.com">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>

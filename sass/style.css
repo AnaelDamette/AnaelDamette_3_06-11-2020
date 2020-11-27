@@ -1,21 +1,20 @@
 /* Page : Index html */
-.body-index {
-  background-color: #ffff;
-}
-
 /* Header */
 .logo {
+  background-color: #ffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .logo img {
   width: 50%;
+  max-height: 80px;
+  max-width: 212px;
 }
 
 .en-tete {
@@ -32,16 +31,36 @@
           align-items: center;
 }
 
-.en-tete h1 {
+.en-tete .en-tete-wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.en-tete .en-tete-wrap br {
+  display: none;
+}
+
+.en-tete .en-tete-wrap h1 {
   font-size: 1.3em;
   text-align: center;
   margin-top: 1.5em;
 }
 
-.en-tete p {
+.en-tete .en-tete-wrap p {
   color: #5d5d5d;
   font-size: 0.9em;
   text-align: center;
+}
+
+.en-tete .en-tete-wrap .bouton {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .recherche {
@@ -72,7 +91,22 @@
 
 /* Section fonctionnement */
 .fonctionnement {
-  margin: 30px 8px 50px 8px;
+  padding: 30px 15px 50px 15px;
+  background-color: #ffff;
+}
+
+@media screen and (min-width: 768px) {
+  .fonctionnement .fonctionnement-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 15px 0px 15px 0px;
+  }
 }
 
 .bloc-fonctionnement {
@@ -85,6 +119,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .bloc-fonctionnement {
+    margin: 8px;
+    width: 300px;
+  }
 }
 
 .bloc-fonctionnement__num {
@@ -134,7 +175,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 10px 30px 10px;
+  padding: 30px 15px 30px 15px;
 }
 
 /* section restaurant */
@@ -161,8 +202,16 @@
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  margin: 10px 0px 10px 0px;
+  margin: 15px 0px 15px 0px;
   height: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .bloc_restaurant {
+    width: 345px;
+    height: 230px;
+    margin: 15px;
+  }
 }
 
 .bloc_restaurant figure {
@@ -189,6 +238,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 /* Fin de page Index Html */
@@ -267,14 +328,35 @@ nav figure img {
   padding: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .bloc_menu {
+    min-width: 315px;
+  }
+}
+
 .bloc_menu__legende {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .menu {
-  margin: 50px 0px 20px 0px;
+  margin: 20px 0px 50px 0px;
 }
 
 .menu h2 {
@@ -287,11 +369,9 @@ nav figure img {
   font-size: 1em;
 }
 
-.entree {
-  margin-top: 0px;
-}
+@-webkit-keyframes menu-deroulant {}
 
-a {
+@keyframes menu-deroulant {}a {
   text-decoration: none;
   color: #353535;
 }
@@ -331,9 +411,15 @@ img {
 }
 
 body {
-  background-color: #ececec;
   width: 100%;
   margin: 0px;
+}
+
+.page {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ececec;
 }
 
 figure {
@@ -368,6 +454,7 @@ footer figure img {
 
 /* Display flex */
 .bloc-fonctionnement,
+.bouton,
 .bloc-fonctionnement__num,
 .bloc-fonctionnement__list,
 .restaurant,
