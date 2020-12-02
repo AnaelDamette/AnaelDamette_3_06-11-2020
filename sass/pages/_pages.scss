@@ -223,7 +223,7 @@ nav {
     @include shadow;
     @include border-radius;
     @media screen and (min-width: 768px) {
-        min-width : 315px;
+        min-width: 315px;
     }
     background-color: $couleur-background-alt;
     flex-direction: column;
@@ -233,13 +233,13 @@ nav {
         justify-content: space-between;
     }
     &--1 {
-        animation-delay :0.2s;
+        animation-delay: 0.2s;
     }
     &--2 {
-        animation-delay :0.4s;
+        animation-delay: 0.4s;
     }
     &--3 {
-        animation-delay :0.6s;
+        animation-delay: 0.6s;
     }
 }
 .menu-wrap {
@@ -264,13 +264,12 @@ nav {
 }
 @keyframes menu-deroulant {
     0% {
-      visibility: visible;
-      opacity: 0;
-      transform: translateY(45px);
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(45px);
     }
     100% {
-      opacity: 1;
-      visibility: visible;
+        opacity: 1;
+        visibility: visible;
     }
-  }
-
+}

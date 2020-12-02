@@ -1,3 +1,4 @@
+/* gestion des attribus de pages */
 a {
     text-decoration: none;
     color: $couleur-font;
@@ -38,11 +39,24 @@ body {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
+}
+.body-index {
+    opacity: 0;
     background-color: $couleur-background;
+    animation: apparition 1s linear forwards;
+    animation-delay: 5s;
 }
 figure {
     margin: 0;
 }
+.bloc_restaurant > figure > img,
+.entete_restaurant > img {
+    max-width: fill;
+    max-height: fill;
+    max-height: 70%;
+    min-width: 100%;
+}
+/* Gestion du Footer */
 footer {
     background-color: $couleur-font;
     li {
@@ -63,6 +77,7 @@ footer {
     }
     padding: 20px 15px 30px 15px;
 }
+
 /* Display flex */
 
 .bloc-fonctionnement,
@@ -80,12 +95,14 @@ nav,
 .titre_menu,
 .bouton_commander,
 .bloc_menu,
-.bloc_menu__legende {
+.bloc_menu__legende,
+.loader {
     display: flex;
 }
+/* Gestion des boutons */
 button {
     &:focus {
-        outline-style:none;
+        outline-style: none;
     }
     border-radius: 2em;
     color: $couleur-font-alt;
@@ -99,14 +116,104 @@ button {
         background: linear-gradient(to top left, $couleur-primaire, 50%, $couleur-secondaire);
         box-shadow: 2px 2px 10px #666565;
     }
-    }
+}
 .bouton_commander {
     justify-content: center;
 }
-.bloc_restaurant > figure > img,
-.entete_restaurant > img {
-    max-width: fill;
-    max-height: fill;
-    max-height: 70%;
+/* gestion de l'animation du Coeur */
+.fa-heart {
+    color: $couleur-background;
+    text-shadow: black 1px 0px, black -1px 0px, black 0px 1px, black 0px -1px;
+    transition: background-color 1s ease-in, color ease-out 1s;
+    &:hover {
+        background-image: linear-gradient(to top left, $couleur-primaire, 70%, $couleur-secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: none;
+    }
+}
+/* Gestion du Loader */
+.loader {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: $couleur-background;
+    justify-content: center;
+    align-items: center;
     min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: disparition 1s linear forwards;
+    animation-delay: 5s;
+    &__text {
+        margin-bottom: 20px;
+        font-size: 40px;
+        background-image: linear-gradient(to top left, $couleur-primaire, 70%, $couleur-secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: none;
+    }
+    &__spin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:before,
+        &:after,
+        span:before,
+        span:after {
+            content: "";
+            border-radius: 5px;
+            display: block;
+            position: relative;
+            width: 10px;
+            height: 20px;
+            background-image: linear-gradient(to top left, $couleur-primaire, 70%, $couleur-secondaire);
+            color: transparent;
+            text-shadow: none;
+            animation: grow 2s ease-out infinite;
+            margin: 2px;
+        }
+        span:after {
+            animation-delay: 0.4s;
+        }
+        &:after {
+            animation-delay: 0.8s;
+        }
+        span:before {
+            animation-delay: 1.2s;
+        }
+    }
+}
+@keyframes disparition {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes apparition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes grow {
+    0% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }
