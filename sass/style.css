@@ -160,11 +160,11 @@
   border-radius: 1em;
 }
 
-.bloc-fonctionnement__list:hover {
+.fonce {
   background-color: #9553dc1e;
 }
 
-.bloc-fonctionnement__list:hover i {
+.fonce i {
   color: #9356dc;
 }
 
