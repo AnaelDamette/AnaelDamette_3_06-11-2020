@@ -101,8 +101,8 @@
         width: 100%;
         height: 100%;
         @include shadow;
-        @include border-radius;        
-    }    
+        @include border-radius;
+    }
 }
 .fonce {
     i {
@@ -216,39 +216,6 @@ nav {
 .dessert {
     padding: $padding;
 }
-.bloc_menu {
-    visibility: hidden;
-    animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
-    @include shadow;
-    @include border-radius;
-    @media screen and (min-width: 768px) {
-        min-width: 315px;
-    }
-    background-color: $couleur-background-alt;
-    flex-direction: column;
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
-    &__legende {
-        justify-content: space-between;
-    }
-    &--1 {
-        animation-delay: 0.2s;
-    }
-    &--2 {
-        animation-delay: 0.4s;
-    }
-    &--3 {
-        animation-delay: 0.6s;
-    }
-}
-.menu-wrap {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
 .menu {
     margin: 20px 0px 50px 0px;
     h2 {
@@ -260,6 +227,94 @@ nav {
         color: $couleur-font;
         font-size: 1em;
     }
+}
+.menu-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+.bloc_menu {
+    @include shadow;
+    @include border-radius;
+    @media screen and (min-width: 768px) {
+        min-width: 315px;
+    }
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    /* gestion animation favoris */
+    &:hover {
+        .menu__validation {
+            .fa-check-circle {
+                transform: rotate(-360deg);
+            }
+            transform: translateX(0px);
+        }
+        .bloc_menu__legend--prix {
+            margin-right: 60px;
+        }
+    }
+    &__legend--prix {
+        transition-duration: 0.4s;
+        align-self: flex-end;
+    }
+    &__legend {
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+    }
+    &__titre {
+        font-size: 13px;
+        overflow: visible;
+    }
+    &__legend--text {
+        font-size: 13px;
+    }
+    /* gestion animation menu-déroulant */
+    visibility: hidden;
+    animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
+    background-color: $couleur-background-alt;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    &--1 {
+        animation-delay: 0.2s;
+    }
+    &--2 {
+        animation-delay: 0.4s;
+    }
+    &--3 {
+        animation-delay: 0.6s;
+    }
+}
+.menu__validation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: $couleur-tertiaire;
+    transition-duration: 0.4s;
+    transform: translateX(60px);
+}
+.bloc_menu__legend--text,
+.bloc_menu__titre > h3,
+.bloc_menu__legend {
+    transition: 0.4s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fa-check-circle {
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    font-size: 20px;
+    color: $couleur-background;
+    transition-delay: 0.1s;
+    transition-duration: 0.4s;
 }
 @keyframes menu-deroulant {
     0% {

@@ -39,10 +39,10 @@ body {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
+    background-color: $couleur-background;
 }
 .body-index {
     opacity: 0;
-    background-color: $couleur-background;
     animation: apparition 1s linear forwards;
     animation-delay: 5s;
 }
@@ -95,7 +95,7 @@ nav,
 .titre_menu,
 .bouton_commander,
 .bloc_menu,
-.bloc_menu__legende,
+.bloc_menu__legend,
 .loader {
     display: flex;
 }
