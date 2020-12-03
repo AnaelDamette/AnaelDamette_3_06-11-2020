@@ -275,18 +275,22 @@ nav {
     }
     /* gestion animation menu-déroulant */
     visibility: hidden;
-    animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
+    -webkit-animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
+            animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
     background-color: $couleur-background-alt;
     margin: 10px 0px 10px 0px;
     padding: 10px;
     &--1 {
-        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s;
     }
     &--2 {
-        animation-delay: 0.4s;
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
     }
     &--3 {
-        animation-delay: 0.6s;
+        -webkit-animation-delay: 0.6s;
+                animation-delay: 0.6s;
     }
 }
 .menu__validation {
@@ -315,6 +319,17 @@ nav {
     color: $couleur-background;
     transition-delay: 0.1s;
     transition-duration: 0.4s;
+}
+@-webkit-keyframes menu-deroulant {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 @keyframes menu-deroulant {
     0% {
