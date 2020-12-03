@@ -358,7 +358,7 @@ nav figure img {
   /* gestion animation menu-déroulant */
   visibility: hidden;
   -webkit-animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
-          animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
+  animation: menu-deroulant 1s cubic-bezier(0, 0, 0, 1) forwards;
   background-color: #ffff;
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -413,17 +413,17 @@ nav figure img {
 
 .bloc_menu--1 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .bloc_menu--2 {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .bloc_menu--3 {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .menu__validation {
@@ -524,7 +524,7 @@ p {
 
 img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 body {
@@ -542,9 +542,9 @@ body {
 .body-index {
   opacity: 0;
   -webkit-animation: apparition 1s linear forwards;
-          animation: apparition 1s linear forwards;
+  animation: apparition 1s linear forwards;
   -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 figure {
@@ -586,7 +586,7 @@ footer figure {
 
 footer figure img {
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
   height: 1.5em;
 }
 
@@ -680,11 +680,11 @@ button:hover {
   min-width: 100%;
   min-height: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
   -webkit-animation: disparition 1s linear forwards;
-          animation: disparition 1s linear forwards;
+  animation: disparition 1s linear forwards;
   -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 .loader__text {
@@ -724,23 +724,23 @@ button:hover {
   color: transparent;
   text-shadow: none;
   -webkit-animation: grow 2s ease-out infinite;
-          animation: grow 2s ease-out infinite;
+  animation: grow 2s ease-out infinite;
   margin: 2px;
 }
 
 .loader__spin span:after {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .loader__spin:after {
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .loader__spin span:before {
   -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 @-webkit-keyframes disparition {

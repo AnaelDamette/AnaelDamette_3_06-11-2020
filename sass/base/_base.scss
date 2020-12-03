@@ -152,7 +152,7 @@ button {
     min-width: 100%;
     min-height: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
     -webkit-animation: disparition 1s linear forwards;
             animation: disparition 1s linear forwards;
     -webkit-animation-delay: 5s;
