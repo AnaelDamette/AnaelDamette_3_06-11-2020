@@ -510,12 +510,12 @@ h3,
 h2,
 h1 {
   font-family: "Roboto", sans-serif;
+  color: #353535;
 }
 
 h2,
 h3 {
   margin: 0px;
-  color: black;
 }
 
 p {
