@@ -544,8 +544,8 @@ body {
   opacity: 0;
   -webkit-animation: apparition 1s linear forwards;
   animation: apparition 1s linear forwards;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 figure {
@@ -684,8 +684,8 @@ button:hover {
   z-index: -1;
   -webkit-animation: disparition 1s linear forwards;
   animation: disparition 1s linear forwards;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .loader__text {

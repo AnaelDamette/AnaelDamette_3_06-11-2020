@@ -46,8 +46,8 @@ body {
     opacity: 0;
     -webkit-animation: apparition 1s linear forwards;
             animation: apparition 1s linear forwards;
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
 }
 figure {
     margin: 0;
@@ -155,8 +155,8 @@ button {
     z-index: -1;
     -webkit-animation: disparition 1s linear forwards;
             animation: disparition 1s linear forwards;
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     &__text {
         margin-bottom: 20px;
         font-size: 40px;
