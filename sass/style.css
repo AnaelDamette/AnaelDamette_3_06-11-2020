@@ -670,7 +670,7 @@ button:hover {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   background-color: #ececec;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

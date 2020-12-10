@@ -145,7 +145,7 @@ button {
 .loader {
     flex-direction: column;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     background-color: $couleur-background;
     justify-content: center;
     align-items: center;
