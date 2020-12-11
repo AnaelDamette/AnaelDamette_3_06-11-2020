@@ -658,6 +658,7 @@ button:hover {
   background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
   text-shadow: none;
 }
@@ -695,6 +696,7 @@ button:hover {
   background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
   text-shadow: none;
 }
