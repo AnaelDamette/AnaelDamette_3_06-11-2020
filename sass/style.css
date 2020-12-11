@@ -656,7 +656,7 @@ button:hover {
 .fa-heart:hover {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(70%), to(#ff79da));
   background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
-  background-clip: text;
+  /*background-clip: text;*/
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
@@ -694,7 +694,7 @@ button:hover {
   font-size: 40px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(70%), to(#ff79da));
   background-image: linear-gradient(to top left, #9356dc, 70%, #ff79da);
-  background-clip: text;
+  /*background-clip: text;*/
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
